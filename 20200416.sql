@@ -142,7 +142,7 @@ SELECT *
 FROM users
 WHERE userid != 'brown';
 
-SQL 리터럴
+SQL 리터럴 (표기방법)
 숫자 : ...20, 30.5
 문자 : 싱글 쿼테이션 : 'hello world'
 날짜 : TO_DATE('날짜 문자열', '날짜 문자열의 형식');
@@ -150,15 +150,127 @@ SQL 리터럴
 1982년 1월 1일 이후에 입사한 직원만 조회
 직원의 입사일자 : hiredate 컬럼
 emp 테이블의 직원 : 14명
-1982년 1월 1일 이후 입사자가 " 3명
-1982년 1월 1일 이전 입사자가 : 11명
+
 
 SELECT *
 FROM emp
 WHERE hiredate >= TO_DATE('19820101', 'YYYYMMDD');
       hiredate >= TO_DATE('1982/01/01', 'YYYY/MM/DD');
       hiredate >= TO_DATE('1982.01.01', 'YYYY.MM.DD');
+      
+ SELECT 에서 연산 :
+    날짜 연산 (+, -) : 날짜 + 정수, -정수 : 날짜에서 +-정수를 한 과거 혹은 미래일자의 데이트 타입 변환
+    정수 연산 (....) : 수업시간에 다루진 않음...
+    문자열 연산
+        리터럴 : 표기방법
+                 숫자 리터럴 : 숫자로 표현
+                 문자 리터럴 : java : "문자열" / sql : 'sql'
+                            SELECT SELECT * FROM || table_name
+                            SELECT 'SELECT * FROM' || tabel_name
+                    문자열 결합연산 : +가 아니라 || (java에서는 +)
+                날짜?? : TO_DATE('날짜문자열', '날짜 문자열에 대한 포맷')
+                        TO_DATE('20200417', 'yyyymmdd')
+  WHERE " 기술한 조건에 만족하는 행만 조회 되도록 제한; 
+ --D
+
+ SELECT *
+ FROM emp;
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+    
 
 
-
+;
   
